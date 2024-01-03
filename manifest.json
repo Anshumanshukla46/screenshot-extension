@@ -1,18 +1,42 @@
 {
     "manifest_version": 3,
-    "name": "Screenshot",
-    "version": "3.0",
-    "description": "Takes a Screenshot of the current page",
+    "name": "Screenshot Extension",
+    "version": "0.0.1",
+    "description": "Capture and download screenshots of the current page with a single click.",
+    "short_description": "Capture and download screenshots with a single click.",
     "permissions": [
         "activeTab",
         "tabs"
     ],
     "action": {
-        "default_popup": "index.html"
+        "default_popup": "index.html",
+        "default_icon": {
+            "48": "./screenshot.png"
+        }
     },
     "icons": {
         "48": "./screenshot.png"
     },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "styles.css"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ]
+        },
+        {
+            "resources": [
+                "app.js"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ]
+        }
+    ],
     "content_script": [
         {
             "matches": [
