@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Screenshot",
+    "version": "3.0",
+    "description": "Takes a Screenshot of the current page",
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "action": {
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "48": "./screenshot.png"
+    },
+    "content_script": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "./app.js"
+            ]
+        }
+    ]
+}

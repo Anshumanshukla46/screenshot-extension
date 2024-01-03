@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    margin: 0;
+}
+
+button {
+    background-color: skyblue;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0099cc;
+}
+
+button:active {
+    background-color: #005580;
+}
